@@ -12,7 +12,7 @@ you can see in the diagram below we can handle errors.
 
 
 ## Example requests
-Create a form - should return a 204, meaning that the process has been started. The server prints the process business key (key used to uniquivocally identify the process instance).
+Create a form using the Quarkus endpoint - should return a 204, meaning that the process has been started. The server prints the process business key (key used to uniquivocally identify the process instance).
 
 ```bash
 curl -X POST \
@@ -55,4 +55,21 @@ curl -X POST \
 ```
 
 
+Start the create form process by directly invoking the Camunda engine - this will create an empty form (the body is an empty json object):
 
+```bash
+curl -X POST \
+  http://localhost:8080/engine-rest/process-definition/key/bpmUnifiedProcess/start \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 2' \
+  -H 'Content-Type: application/json' \
+  -H 'Cookie: JSESSIONID=62FD762C6253367EF376A65C500FE922.208' \
+  -H 'Host: localhost:8080' \
+  -H 'Postman-Token: eed00342-d2b9-473a-a039-fefc344504d9,69672e67-7340-4606-93c9-4d5b3f216809' \
+  -H 'User-Agent: PostmanRuntime/7.19.0' \
+  -H 'cache-control: no-cache' \
+  -d '{}'
+```
