@@ -1,4 +1,5 @@
 # BPM Camunda demo
+This demo works with the Camunda standalone server. That was an architectural choice.
 
 1. Download the Open Source edition of Camunda.
 2. Start the server. sh start-camunda.sh - it should start in the port 8080.
