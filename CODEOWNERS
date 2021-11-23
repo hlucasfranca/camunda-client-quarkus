@@ -1,0 +1,8 @@
+* @brunobat @JoaoCamposFrom94
+.drone.yml @talkdesk-tdx/tdx-sre
+.drone.star @talkdesk-tdx/tdx-sre
+Dockerfile* @talkdesk-tdx/tdx-sre
+Jenkinsfile @talkdesk-tdx/tdx-sre
+.dockerignore @talkdesk-tdx/tdx-sre
+entrypoint.sh @talkdesk-tdx/tdx-sre
+.anchore-policy.json @talkdesk-tdx/tdx-sre
